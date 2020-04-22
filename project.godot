@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Animal",
+"language": "GDScript",
+"path": "res://AnimalScript.gd"
+}, {
+"base": "Animal",
+"class": "Frog",
+"language": "GDScript",
+"path": "res://FrogScript.gd"
+}, {
+"base": "Animal",
+"class": "Horse",
+"language": "GDScript",
+"path": "res://HorseScript.gd"
+} ]
+_global_script_class_icons={
+"Animal": "",
+"Frog": "",
+"Horse": ""
+}
+
+[application]
+
+config/name="Inheritance"
+run/main_scene="res://Node2D.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
