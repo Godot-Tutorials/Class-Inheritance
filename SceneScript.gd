@@ -1,3 +1,4 @@
+# extends keyword is used to Inherit from a class
 extends Node
 
 var horseObject = Horse.new('Darth Sidious', 'apple')
